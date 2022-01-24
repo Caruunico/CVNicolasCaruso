@@ -1,0 +1,12 @@
+.example-container{
+    width: 100% !important;
+    height: 100% !important;
+}
+.menu{
+    width: 30%;
+    background-color: blue;
+
+}
+.contenido{
+    background-color: coral;
+}
