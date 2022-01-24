@@ -13,7 +13,7 @@ interface DatosCard {
 export class DataServiceService {
   dataCard: DatosCard[] = [
     {
-      tituloCard: 'NICOLÁS MARTÍN CARUSO',
+      tituloCard: 'NICOLÁS MARTÍN CARUSSO',
       subTituloCard: 'Perfil Personal',
       pieDeTituloCard: '',
       contenidoCard: [
