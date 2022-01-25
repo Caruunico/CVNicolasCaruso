@@ -1,10 +1,10 @@
-<mat-card>
+<mat-card class="mat-elevation-z5">
     <mat-card-title>{{data.tituloCard}}</mat-card-title>
     <mat-card-subtitle>{{data.subTituloCard}}</mat-card-subtitle>
     <mat-card-content>
-      <mat-selection-list #shoes [multiple]="false">
-        <mat-list-option *ngFor="let item of data.contenidoCard" [value]="item">
-          {{item.contenido}}
+      <mat-selection-list #shoes [multiple]="false" *ngFor="let item of data.contenidoCard">
+        <mat-list-option *ngFor="let element of item.contenido" [value]="element" >
+          {{element.texto}}{{element.negrita}}
         </mat-list-option>
       </mat-selection-list>
     </mat-card-content>

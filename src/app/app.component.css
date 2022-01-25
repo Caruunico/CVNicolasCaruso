@@ -4,9 +4,11 @@
 }
 .menu{
     width: 30%;
-    background-color: blue;
-
+    background-color: rgb(74, 74, 87);
 }
 .contenido{
-    background-color: coral;
+    background-color: rgb(223, 222, 222);
+}
+.list{
+    color:white
 }

@@ -1,7 +1,10 @@
 <mat-drawer-container class="example-container">
     <mat-drawer mode="side" opened class="menu">
+      <div>
+        <!-- <img src="../../assets/juani.jpeg" alt=""> -->
+      </div>
         <mat-selection-list #shoes [multiple]="false">
-            <mat-list-option *ngFor="let options of pages" [value]="options" [routerLink]="options.ruta">
+            <mat-list-option class="list" *ngFor="let options of pages" [value]="options" [routerLink]="options.ruta">
               {{options.nombre}}
             </mat-list-option>
           </mat-selection-list>

@@ -13,22 +13,21 @@ interface DatosCard {
 export class DataServiceService {
   dataCard: DatosCard[] = [
     {
-      tituloCard: 'NICOLÁS MARTÍN CARUSSO',
+      tituloCard: 'NICOLÁS MARTÍN CARUSO - ANALISTA DE SISTEMAS',
       subTituloCard: 'Perfil Personal',
       pieDeTituloCard: '',
       contenidoCard: [
         {
           contenido: [
-            'Mi objetivo es trabajar en una empresa detecnología donde pueda aplicar misconocimientos, adquirir nuevos aprendizajes que me ayuden a crecer tanto en lo laboral como en lo personal y poder desenvolverme con compromiso y responsabilidad dentro de un buen clima laboral.',
-            'Skills:',
-            'Html5',
-            'Css, Grid y Flexbox',
-            'JavaScript',
-            'TypeScript / Angular 10+',
-            'Integración de servicios con API REST',
-            'Git',
-            'Metodología ágil Scrum'
-
+            { texto: 'Mi objetivo es trabajar en una empresa de tecnología donde pueda aplicar mis conocimientos, adquirir nuevos aprendizajes que me ayuden a crecer tanto en lo laboral como en lo personal y poder desenvolverme con compromiso y responsabilidad dentro de un buen clima laboral.', negrita: false },
+            { texto: 'Skills:', negrita: true },
+            { texto: 'Html5:', negrita: false },
+            { texto: 'Css, Grid y Flexbox', negrita: false },
+            { texto: 'JavaScript', negrita: false },
+            { texto: 'TypeScript / Angular 10+', negrita: false },
+            { texto: 'Integración de servicios con API REST', negrita: false },
+            { texto: 'Git:', negrita: false },
+            { texto: 'Metodología ágil Scrum:', negrita: false },
           ]
         }
       ]
@@ -39,17 +38,19 @@ export class DataServiceService {
       pieDeTituloCard: 'Escuela Superior de comercio J.J. Urquiza N°49',
       contenidoCard: [
         {
-          contenido: ['Año de ingreso/egreso: 2016/2018',
-            'Análisis y relevamiento de datos.',
-            'Diagrama entidad-relación.',
-            'UML.',
-            'Casos de uso.',
-            'Html5',
-            'Desarrollo:',
-            'CSS',
-            'JavaScript',
-            'PHP',
-            'MySQL']
+          contenido: [
+            { texto: 'Año de ingreso/egreso: 2016/2018', negrita: true },
+            { texto: 'Análisis y relevamiento de datos.', negrita: false },
+            { texto: 'Diagrama entidad-relación.', negrita: false },
+            { texto: 'UML.', negrita: false },
+            { texto: 'Casos de uso.', negrita: false },
+            { texto: 'Html5', negrita: false },
+            { texto: 'Desarrollo:', negrita: true },
+            { texto: 'CSS.', negrita: false },
+            { texto: 'JavaScript.', negrita: false },
+            { texto: 'PHP.', negrita: false },
+            { texto: 'MySQL.', negrita: false },
+          ]
         }
 
       ]
@@ -65,11 +66,12 @@ export class DataServiceService {
           periodo: 'Octubre 2021 - Actualidad',
           funciones: 'Funciones:',
           contenido: [
-            'Desarrollador Front-end Angular, TypeScript, JavaScript, Angular Material y Bootstrap.',
-            'Desarrollo de componentes completos desde sus estilos hasta su funcionalidad según el requerimiento del usuario.',
-            'Integración de servicios con API REST.',
-            'Metodología ágil Scrum.',
-            'Robot process Automation (RPA).'
+            { texto: 'Desarrollador Front-end Angular, TypeScript, JavaScript, Angular Material y Bootstrap.', negrita: false },
+            { texto: 'Desarrollo de componentes completos desde sus estilos hasta su funcionalidad según el requerimiento del usuario.', negrita: false },
+            { texto: 'Integración de servicios con API REST.', negrita: false },
+            { texto: 'Metodología ágil Scrum.', negrita: false },
+            { texto: 'Robot process Automation (RPA).', negrita: false }
+
           ]
         },
         {
@@ -78,10 +80,10 @@ export class DataServiceService {
           periodo: 'Desde Junio 2021 - Octubre 2021',
           funciones: 'Funciones',
           contenido: [
-            'Desarrollador Front-end Angular, TypeScript, JavaScript, Angular Material y Bootstrap.',
-            'Desarrollo de componentes completos desde sus estilos hasta su funcionalidad según el requerimiento del cliente.',
-            'Integración de servicios con API REST.',
-            'Metodología ágil Scrum.'
+            { texto: 'Desarrollador Front-end Angular, TypeScript, JavaScript, Angular Material y Bootstrap.', negrita: false },
+            { texto: 'Desarrollo de componentes completos desde sus estilos hasta su funcionalidad según el requerimiento del cliente.', negrita: false },
+            { texto: 'Integración de servicios con API REST.', negrita: false },
+            { texto: 'Metodología ágil Scrum.', negrita: false }
           ]
         },
         {
@@ -90,13 +92,13 @@ export class DataServiceService {
           periodo: 'Noviembre 2013 - Mayo 2021',
           funciones: 'Funciones:',
           contenido: [
-            'Toma efectiva de decisiones y resolución de conflictos',
-            'Revisión y resolución de reclamos.',
-            'Completar listas de verificación y procedimientos para reportar el efectivo, arqueo de cajas, control de inventarios, administración de proveedores.',
-            'Dirigir, coordinar, motivar y supervisar la labor del personal a cargo, a fines de garantizar una atención de calidad a los clientes para conseguir fidelizarlos.',
-            'Plantear objetivos que beneficien a la empresa, comunicarlosal resto del equipo y hacer seguimiento para lograrlos.',
-            'Operar de acuerdo a los estándares de la empresa.',
-            'Control del orden, higiene y seguridad del establecimiento.'
+            { texto: 'Toma efectiva de decisiones y resolución de conflictos', negrita: false },
+            { texto: 'Revisión y resolución de reclamos.', negrita: false },
+            { texto: 'Completar listas de verificación y procedimientos para reportar el efectivo, arqueo de cajas, control de inventarios, administración de proveedores.', negrita: false },
+            { texto: 'Dirigir, coordinar, motivar y supervisar la labor del personal a cargo, a fines de garantizar una atención de calidad a los clientes para conseguir fidelizarlos.', negrita: false },
+            { texto: 'Plantear objetivos que beneficien a la empresa, comunicarlosal resto del equipo y hacer seguimiento para lograrlos.', negrita: false },
+            { texto: 'Operar de acuerdo a los estándares de la empresa.', negrita: false },
+            { texto: 'Control del orden, higiene y seguridad del establecimiento.', negrita: false }
           ]
         },
 
@@ -107,26 +109,31 @@ export class DataServiceService {
       subTituloCard: 'Estudios',
       pieDeTituloCard: '',
       contenidoCard: [
-        { 
-          contenido: 
-          ['Estudiante Inglés en el instituto CRECE IDIOMAS',] }
+        {
+          contenido:
+            [
+              { texto: 'Estudiante Inglés en el instituto CRECE IDIOMAS', negrita: false }
+            ]
+        }
 
       ]
     },
     {
-      tituloCard: 'INFORMACION DE CONTACTO',
+      tituloCard: 'INFORMACIÓN DE CONTACTO',
       subTituloCard: '',
       pieDeTituloCard: '',
       contenidoCard: [
         {
-          contenido: 
-          ['Teléfono: 341-2256609.',
-            'LinkedIn:',
-            'https://www.linkedin.com/in/nicolascaruso-889570187/',
-            'GitHub:',
-            'https://github.com/Caruunico',
-            'Rosario, Santa Fe, Argentina.',
-            'Correo: nicolascaruso19@outlook.com']
+          contenido:
+            [
+              { texto: 'Teléfono: 341-2256609.', negrita: false },
+              { texto: 'LinkedIn:', negrita: true },
+              { texto:'https://www.linkedin.com/in/nicolascaruso-889570187/', negrita: false },
+              { texto: 'GitHub:', negrita: true },
+              { texto: 'https://github.com/Caruunico', negrita: false },
+              { texto: 'Rosario, Santa Fe, Argentina.', negrita: true },
+              { texto: 'Correo: nicolascaruso19@outlook.com', negrita: false }
+              ]
         }
 
       ]
