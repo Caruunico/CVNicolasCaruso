@@ -10,5 +10,32 @@
     background-color: rgb(223, 222, 222);
 }
 .list{
-    color:white
+    color:white;
+    margin-left: 40px;
+}
+.lista{
+    margin-top:30px
+}
+.options{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: flex-start;
+    align-items: center;
+}
+mat-icon{
+    margin-right: 9px;
+}
+/* Estilos foto carnet*/
+img{
+    margin-top: 20px;
+    border-radius: 170px;
+    width: 250px;
+}
+
+.fotoCarnet{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }

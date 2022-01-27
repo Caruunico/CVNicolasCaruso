@@ -1,11 +1,11 @@
 <mat-drawer-container class="example-container">
     <mat-drawer mode="side" opened class="menu">
-      <div>
-        <!-- <img src="../../assets/juani.jpeg" alt=""> -->
+      <div class="fotoCarnet">
+        <img src="../../assets/fotocarnet.jpg" alt="">
       </div>
-        <mat-selection-list #shoes [multiple]="false">
+        <mat-selection-list #shoes [multiple]="false" class="lista">
             <mat-list-option class="list" *ngFor="let options of pages" [value]="options" [routerLink]="options.ruta">
-              {{options.nombre}}
+              <p class="options"><mat-icon>{{options.icon}}</mat-icon> {{options.nombre}}</p>
             </mat-list-option>
           </mat-selection-list>
     </mat-drawer>

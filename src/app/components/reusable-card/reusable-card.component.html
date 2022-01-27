@@ -1,11 +1,13 @@
 <mat-card class="mat-elevation-z5">
-    <mat-card-title>{{data.tituloCard}}</mat-card-title>
-    <mat-card-subtitle>{{data.subTituloCard}}</mat-card-subtitle>
-    <mat-card-content>
-      <mat-selection-list #shoes [multiple]="false" *ngFor="let item of data.contenidoCard">
-        <mat-list-option *ngFor="let element of item.contenido" [value]="element" >
-          {{element.texto}}{{element.negrita}}
-        </mat-list-option>
-      </mat-selection-list>
-    </mat-card-content>
-  </mat-card>
+  <mat-card-title>{{data.tituloCard}}</mat-card-title>
+  <mat-card-subtitle>{{data.subTituloCard}}</mat-card-subtitle>
+  <mat-card-content>
+    <p class="pieDeTituloCard">{{data.pieDeTituloCard}}</p>
+    <mat-selection-list #shoes [multiple]="false" *ngFor="let item of data.contenidoCard">
+      <mat-list-option *ngFor="let element of item.contenido" [value]="element">
+        <p *ngIf="!element.negrita">{{element.texto}}</p>
+        <p *ngIf="element.negrita"><b>{{element.texto}}</b></p>
+      </mat-list-option>
+    </mat-selection-list>
+  </mat-card-content>
+</mat-card>

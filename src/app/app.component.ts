@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 interface Pages {
   nombre: string;
   ruta: string;
+  icon: string;
 }
 
 
@@ -16,23 +17,28 @@ export class AppComponent {
   pages: Pages[] = [
     {
       nombre: 'Perfil Personal',
-      ruta: '/perfilPersonal'
+      ruta: '/perfilPersonal',
+      icon: 'perm_identity'
     },
     {
       nombre: 'Historial Académico',
-      ruta: '/historialAcademico'
+      ruta: '/historialAcademico',
+      icon: 'school'
     },
     {
       nombre: 'Historial Laboral',
-      ruta: '/historialLaboral'
+      ruta: '/historialLaboral',
+      icon: 'work_outline'
     },
     {
       nombre: 'Idiomas',
-      ruta: '/idiomas'
+      ruta: '/idiomas',
+      icon: 'language'
     },
     {
       nombre: 'Contacto',
-      ruta: '/infoContacto'
+      ruta: '/infoContacto',
+      icon: 'contact_mail'
     },
   ]
   constructor(){}

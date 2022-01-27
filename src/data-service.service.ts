@@ -11,6 +11,8 @@ interface DatosCard {
   providedIn: 'root'
 })
 export class DataServiceService {
+  linkedIn = 'https://www.linkedin.com/in/nicolascaruso-889570187/'
+  git = 'https://github.com/Caruunico'
   dataCard: DatosCard[] = [
     {
       tituloCard: 'NICOLÁS MARTÍN CARUSO - ANALISTA DE SISTEMAS',
@@ -21,13 +23,13 @@ export class DataServiceService {
           contenido: [
             { texto: 'Mi objetivo es trabajar en una empresa de tecnología donde pueda aplicar mis conocimientos, adquirir nuevos aprendizajes que me ayuden a crecer tanto en lo laboral como en lo personal y poder desenvolverme con compromiso y responsabilidad dentro de un buen clima laboral.', negrita: false },
             { texto: 'Skills:', negrita: true },
-            { texto: 'Html5:', negrita: false },
+            { texto: 'Html5.', negrita: false },
             { texto: 'Css, Grid y Flexbox', negrita: false },
             { texto: 'JavaScript', negrita: false },
             { texto: 'TypeScript / Angular 10+', negrita: false },
             { texto: 'Integración de servicios con API REST', negrita: false },
-            { texto: 'Git:', negrita: false },
-            { texto: 'Metodología ágil Scrum:', negrita: false },
+            { texto: 'Git.', negrita: false },
+            { texto: 'Metodología ágil Scrum.', negrita: false },
           ]
         }
       ]
@@ -44,7 +46,7 @@ export class DataServiceService {
             { texto: 'Diagrama entidad-relación.', negrita: false },
             { texto: 'UML.', negrita: false },
             { texto: 'Casos de uso.', negrita: false },
-            { texto: 'Html5', negrita: false },
+            { texto: 'Html5.', negrita: false },
             { texto: 'Desarrollo:', negrita: true },
             { texto: 'CSS.', negrita: false },
             { texto: 'JavaScript.', negrita: false },
@@ -128,11 +130,11 @@ export class DataServiceService {
             [
               { texto: 'Teléfono: 341-2256609.', negrita: false },
               { texto: 'LinkedIn:', negrita: true },
-              { texto:'https://www.linkedin.com/in/nicolascaruso-889570187/', negrita: false },
+              { texto:'https://www.linkedin.com/in/nicolascaruso-889570187/', negrita: false, link: this.linkedIn},
               { texto: 'GitHub:', negrita: true },
-              { texto: 'https://github.com/Caruunico', negrita: false },
+              { texto: 'https://github.com/Caruunico', negrita: false, link: this.git },
               { texto: 'Rosario, Santa Fe, Argentina.', negrita: true },
-              { texto: 'Correo: nicolascaruso19@outlook.com', negrita: false }
+              { texto: 'Correo: nicolascaruso19@outlook.com', negrita: true }
               ]
         }
 
