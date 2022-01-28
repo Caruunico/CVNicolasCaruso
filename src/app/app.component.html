@@ -1,5 +1,6 @@
-<mat-drawer-container class="example-container">
-    <mat-drawer mode="side" opened class="menu">
+<mat-drawer-container class="example-container" [hasBackdrop]="false">
+    <mat-drawer #drawer mode="push" opened class="menu">
+      <mat-icon (click)="drawer.toggle()" matTooltip="Cerrar menú" matTooltipPosition="before" class="toggleClose">close</mat-icon>
       <div class="fotoCarnet">
         <img src="../../assets/fotocarnet.jpg" alt="">
       </div>
@@ -10,6 +11,7 @@
           </mat-selection-list>
     </mat-drawer>
     <mat-drawer-content class="contenido">
+      <button mat-raised-button color="primary" class="toggleButton" (click)="drawer.toggle()">Menú</button>
         <router-outlet></router-outlet>
     </mat-drawer-content>
   </mat-drawer-container>

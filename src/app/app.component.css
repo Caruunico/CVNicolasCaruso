@@ -14,7 +14,9 @@
     margin-left: 40px;
 }
 .lista{
-    margin-top:30px
+    margin-top:30px;
+    overflow-x: hidden !important;
+
 }
 .options{
     display: flex;
@@ -38,4 +40,21 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+/*Estilos toggle buttons*/
+.toggleButton{
+    position: fixed;
+    z-index: 99;
+    right: -2%;
+    top: 30%;
+    width: 5rem;
+    height: 4rem;
+    background-color:  rgb(74, 74, 87);
+}
+.toggleClose{
+    color: rgb(161, 158, 158);
+    float: right;
+    margin-top: 1rem;
+    cursor: pointer;
 }

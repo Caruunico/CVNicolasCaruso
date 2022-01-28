@@ -4,9 +4,18 @@
   <mat-card-content>
     <p class="pieDeTituloCard">{{data.pieDeTituloCard}}</p>
     <mat-selection-list #shoes [multiple]="false" *ngFor="let item of data.contenidoCard">
+      <h2><b>{{item.titulo}}</b></h2>
+      <mat-card-subtitle>{{item.subtitulo}}</mat-card-subtitle>
+      <mat-card-subtitle><b>{{item.periodo}}</b></mat-card-subtitle>
+      <mat-card-subtitle><b>{{item.funciones}}</b></mat-card-subtitle>
       <mat-list-option *ngFor="let element of item.contenido" [value]="element">
-        <p *ngIf="!element.negrita">{{element.texto}}</p>
+        <p *ngIf="!element.negrita && !element.link">{{element.texto}}</p>
         <p *ngIf="element.negrita"><b>{{element.texto}}</b></p>
+        <p *ngIf="element.link">
+          <a href={{element.texto}}  matTooltip="Ir al link" matTooltipPosition="above">
+            {{element.texto}}
+          </a>
+        </p>
       </mat-list-option>
     </mat-selection-list>
   </mat-card-content>
