@@ -68,7 +68,7 @@ export class DataServiceService {
           periodo: 'Octubre 2021 - Actualidad',
           funciones: 'Funciones:',
           contenido: [
-            { texto: 'Desarrollador Front-end Angular, TypeScript, JavaScript, Angular Material y Bootstrap.', negrita: false },
+            { texto: 'Desarrollador Front-end Angular, TypeScript, JavaScript, Angular Material, Bootstrap y PrimeNG', negrita: false },
             { texto: 'Desarrollo de componentes completos desde sus estilos hasta su funcionalidad según el requerimiento del usuario.', negrita: false },
             { texto: 'Integración de servicios con API REST.', negrita: false },
             { texto: 'Metodología ágil Scrum.', negrita: false },
