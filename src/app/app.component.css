@@ -8,6 +8,7 @@
 }
 .contenido{
     background-color: rgb(223, 222, 222);
+    overflow-x: hidden;
 }
 .list{
     color:white;
