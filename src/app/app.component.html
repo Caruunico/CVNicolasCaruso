@@ -2,7 +2,7 @@
     <mat-drawer #drawer mode="push" opened class="menu">
       <mat-icon (click)="drawer.toggle()" matTooltip="Cerrar menú" matTooltipPosition="before" class="toggleClose">close</mat-icon>
       <div class="fotoCarnet">
-        <img src="../../assets/fotocarnet.jpg" alt="">
+        <img src="../assets/fotocarnet.jpg" alt="">
       </div>
         <mat-selection-list #shoes [multiple]="false" class="lista">
             <mat-list-option class="list" *ngFor="let options of pages" [value]="options" [routerLink]="options.ruta">
