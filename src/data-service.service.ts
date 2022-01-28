@@ -80,7 +80,7 @@ export class DataServiceService {
           titulo: 'Deux IT Company',
           subtitulo: '',
           periodo: 'Desde Junio 2021 - Octubre 2021',
-          funciones: 'Funciones',
+          funciones: 'Funciones:',
           contenido: [
             { texto: 'Desarrollador Front-end Angular, TypeScript, JavaScript, Angular Material y Bootstrap.', negrita: false },
             { texto: 'Desarrollo de componentes completos desde sus estilos hasta su funcionalidad según el requerimiento del cliente.', negrita: false },
