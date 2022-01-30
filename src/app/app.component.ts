@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {MediaMatcher} from '@angular/cdk/layout';
+import {ChangeDetectorRef, OnDestroy} from '@angular/core'
 
 interface Pages {
   nombre: string;
@@ -13,6 +15,8 @@ interface Pages {
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  mobileQuery: MediaQueryList;
+
   title = 'CurriculumVitae';
   pages: Pages[] = [
     {
@@ -41,9 +45,17 @@ export class AppComponent {
       icon: 'contact_mail'
     },
   ]
-  constructor(){}
+  drawer: any;
+  private _mobileQueryListener: () => void;
+
+  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
+    this.mobileQuery = media.matchMedia('(max-width: 600px)');
+    this._mobileQueryListener = () => changeDetectorRef.detectChanges();
+    this.mobileQuery.addListener(this._mobileQueryListener);
+  }
   
   ngOnInit(){}
 
-
+ 
+  
 }

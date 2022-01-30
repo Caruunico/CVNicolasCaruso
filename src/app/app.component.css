@@ -1,61 +1,56 @@
 .example-container{
     width: 100% !important;
-    height: 100% !important;
+    height: 10% !important;
 }
 .menu{
-    width: 30%;
+    width: 100%;
+    box-shadow: none;
     background-color: rgb(74, 74, 87);
+    overflow-x: hidden;
 }
 .contenido{
     background-color: rgb(223, 222, 222);
     overflow-x: hidden;
+    height: 100vh !important;
 }
 .list{
     color:white;
-    margin-left: 40px;
+    /* margin-left: 10px; */
 }
 .lista{
-    margin-top:30px;
+    text-align: center;
     overflow-x: hidden !important;
-
+    background-color: rgb(74, 74, 87);
 }
-.options{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: space-around;
-    justify-content: flex-start;
-    align-items: center;
-}
-mat-icon{
-    margin-right: 9px;
-}
-/* Estilos foto carnet*/
 img{
-    margin-top: 20px;
-    border-radius: 170px;
-    width: 250px;
+    width: 240px;
+    margin: 30px;
+    border-radius: 50%;
 }
-
 .fotoCarnet{
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
+  /* Estilos foto carnet*/
+ @media only screen and (max-width: 700px){
+    img{
+        width: 121px;
+        margin: 20px;
+        border-radius: 50%;
+    }
+    .menu{
+        justify-content: flex-end;
+    }
+}
+ @media only screen and (min-width: 701px) and (max-width: 1080px){
+    img{
+        width: 142px;
+        margin: 20px;
+        border-radius: 50%;
+    }
+    .menu{
+        justify-content: flex-end;
 
-/*Estilos toggle buttons*/
-.toggleButton{
-    position: fixed;
-    z-index: 99;
-    right: -2%;
-    top: 30%;
-    width: 5rem;
-    height: 4rem;
-    background-color:  rgb(74, 74, 87);
-}
-.toggleClose{
-    color: rgb(161, 158, 158);
-    float: right;
-    margin-top: 1rem;
-    cursor: pointer;
-}
+    }
+ }

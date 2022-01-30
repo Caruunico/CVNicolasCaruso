@@ -6,6 +6,10 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import {MatToolbarModule} from '@angular/material/toolbar';
+
+
+
 
 
 
@@ -23,7 +27,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatCardModule,
     MatIconModule,
     MatButtonModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatToolbarModule
   ],
   exports: [
     CommonModule,
@@ -32,7 +37,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatCardModule,
     MatIconModule,
     MatButtonModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatToolbarModule
   ]
 })
 export class MaterialModule { }

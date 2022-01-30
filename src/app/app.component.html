@@ -1,6 +1,7 @@
-<mat-drawer-container class="example-container" [hasBackdrop]="false">
-    <mat-drawer #drawer mode="push" opened class="menu">
-      <mat-icon (click)="drawer.toggle()" matTooltip="Cerrar menú" matTooltipPosition="before" class="toggleClose">close</mat-icon>
+<!-- 
+<mat-drawer-container class="example-container " [hasBackdrop]="false">
+    <mat-drawer #drawer mode="push" opened class="menu mat-elevation-z0">
+      <mat-icon (click)="drawer.toggle()" (click)="verDrawer(drawer)" matTooltip="Cerrar menú" matTooltipPosition="before" class="toggleClose">close</mat-icon>
       <div class="fotoCarnet">
         <img src="assets/fotocarnet.jpg" alt="">
       </div>
@@ -11,7 +12,33 @@
           </mat-selection-list>
     </mat-drawer>
     <mat-drawer-content class="contenido">
-      <button mat-raised-button color="primary" class="toggleButton" (click)="drawer.toggle()">Menú</button>
-        <router-outlet></router-outlet>
+      <div class="barraLateral" [hidden]="!drawer"> </div>     
+      <button mat-raised-button color="primary" class="toggleButton" (click)="verDrawer(drawer)" (click)="drawer.toggle()">Menú</button>
+      
+      <router-outlet></router-outlet>
+
     </mat-drawer-content>
-  </mat-drawer-container>
+  </mat-drawer-container> -->
+
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+  <mat-toolbar color="primary" class="menu">
+    <button mat-icon-button (click)="snav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <h1 class="example-app-name"></h1>
+  </mat-toolbar>
+  <mat-sidenav-container class="example-sidenav-container" >
+    <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"  class="lista" [fixedInViewport]="mobileQuery.matches"
+      fixedTopGap="56">
+      <div class="fotoCarnet">
+        <img src="assets/fotocarnet.jpg" alt="">
+      </div>
+      <mat-nav-list>
+        <a class="list" mat-list-item routerLink={{nav.ruta}} *ngFor="let nav of pages">{{nav.nombre}}</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="contenido">
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
