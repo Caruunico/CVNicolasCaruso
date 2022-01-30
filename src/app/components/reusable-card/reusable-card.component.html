@@ -12,7 +12,7 @@
         <p *ngIf="!element.negrita && !element.link">{{element.texto}}</p>
         <p *ngIf="element.negrita"><b>{{element.texto}}</b></p>
         <p *ngIf="element.link">
-          <a href={{element.texto}}  matTooltip="Ir al link" matTooltipPosition="above">
+          <a href={{element.link}}  matTooltip="Ir al link" matTooltipPosition="above">
             {{element.texto}}
           </a>
         </p>

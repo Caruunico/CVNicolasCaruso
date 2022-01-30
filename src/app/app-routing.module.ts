@@ -6,7 +6,8 @@ import { IdiomasComponent } from './components/idiomas/idiomas.component';
 import { InfoContactoComponent } from './components/info-contacto/info-contacto.component';
 import { PerfilPersonalComponent } from './components/perfil-personal/perfil-personal.component';
 
-const routes: Routes = [
+const routes: Routes = [  
+  { path: '', component: PerfilPersonalComponent },
   { path: 'perfilPersonal', component: PerfilPersonalComponent },
   { path: 'historialAcademico', component: HistorialAcademicoComponent },
   { path: 'historialLaboral', component: HistorialLaboralComponent },

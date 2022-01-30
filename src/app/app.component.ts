@@ -55,6 +55,9 @@ export class AppComponent {
   }
   
   ngOnInit(){}
+  verButto(event: any){
+    console.log(event)
+  }
 
  
   

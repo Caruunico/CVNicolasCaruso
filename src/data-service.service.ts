@@ -11,7 +11,7 @@ interface DatosCard {
   providedIn: 'root'
 })
 export class DataServiceService {
-  linkedIn = 'https://www.linkedin.com/in/nicolascaruso-889570187/'
+  linkedIn = 'https://www.linkedin.com/in/nicolas-caruso-889570187/'
   git = 'https://github.com/Caruunico'
   dataCard: DatosCard[] = [
     {
@@ -130,7 +130,7 @@ export class DataServiceService {
             [
               { texto: 'Teléfono: 341-2256609.', negrita: false },
               { texto: 'LinkedIn:', negrita: true },
-              { texto:'https://www.linkedin.com/in/nicolascaruso-889570187/', negrita: false, link: this.linkedIn},
+              { texto: this.linkedIn, negrita: false, link: this.linkedIn},
               { texto: 'GitHub:', negrita: true },
               { texto: 'https://github.com/Caruunico', negrita: false, link: this.git },
               { texto: 'Rosario, Santa Fe, Argentina.', negrita: true },
