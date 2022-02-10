@@ -65,5 +65,13 @@ a{
 }
 .item{
  height: fit-content;
- padding: 10px;
+ margin-top: 1rem;
+}
+.divider{
+  width: 90% !important;
+  margin-left: 3rem;
+}
+
+mat-selection-list{
+  margin-top: 1rem !important;
 }

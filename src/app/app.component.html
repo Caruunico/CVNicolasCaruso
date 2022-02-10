@@ -11,9 +11,8 @@
       <div class="fotoCarnet">
         <img src="assets/fotocarnet.jpg" alt="">
       </div>
-      <mat-nav-list>
-        <a class="list" mat-list-item routerLink={{nav.ruta}} *ngFor="let nav of pages">{{nav.nombre}}</a>
-        {{mobileQuery.matches}}
+      <mat-nav-list *ngFor="let nav of pages">
+        <a class="list" (click)="cerrarLista(snav)" mat-list-item routerLink={{nav.ruta}} ><mat-icon style="margin-right: 8px;">{{nav.icon}}</mat-icon>{{nav.nombre}}</a>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content class="contenido">

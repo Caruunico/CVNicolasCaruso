@@ -4,6 +4,7 @@
   <mat-card-content>
     <p class="pieDeTituloCard">{{data.pieDeTituloCard}}</p>
     <mat-selection-list class="item" #shoes [multiple]="false" *ngFor="let item of data.contenidoCard">
+      <!-- <mat-divider class="divider mb-5"></mat-divider> -->
       <h2><b>{{item.titulo}}</b></h2>
       <mat-card-subtitle>{{item.subtitulo}}</mat-card-subtitle>
       <mat-card-subtitle><b>{{item.periodo}}</b></mat-card-subtitle>

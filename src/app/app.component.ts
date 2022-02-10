@@ -58,7 +58,14 @@ export class AppComponent {
   verButto(event: any){
     console.log(event)
   }
-
+  cerrarLista(snav: any){
+    console.log(this.mobileQuery)
+    if(this.mobileQuery.matches === true){
+      return snav.toggle()
+    }else{
+      return false
+    }
+  }
  
   
 }

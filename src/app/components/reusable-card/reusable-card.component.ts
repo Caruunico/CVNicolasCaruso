@@ -11,8 +11,7 @@ export class ReusableCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    
-   
   }
 
+  
 }
